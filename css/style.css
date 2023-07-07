@@ -1,0 +1,28 @@
+* {box-sizing: border-box;}
+
+
+/*Variáveis*/
+
+:root {
+    /* --cor_azul: #274083; */
+  }
+
+
+body {
+    font-family: arial;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "cabecalho"
+      "main"
+      "rodape";
+    height: 100vh;
+  }
+
+  header{grid-area: cabecalho;background-color: red;}
+  figure{background-color: blue;}
+  header section{background-color: aqua;}
+  main{background-color: blueviolet;}
+  section{background-color: chartreuse;}
+  footer{background-color: black;}

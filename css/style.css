@@ -1,28 +1,89 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 
-/*Variáveis*/
+/*Variáveis-----------------------------------------------------------------*/
 
 :root {
-    /* --cor_azul: #274083; */
-  }
+  --borda: 2px solid #000;
+}
 
+/* GRID -------------------------------------------------------------------*/
 
 body {
-    font-family: arial;
-    color: #fff;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "cabecalho"
-      "main"
-      "rodape";
-    height: 100vh;
-  }
+  font-family: arial;
+  color: #000;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "cabecalho"
+    "main"
+    "rodape";
+  height: 100vh;
+  margin: 0;
+}
 
-  header{grid-area: cabecalho;background-color: red;}
-  figure{background-color: blue;}
-  header section{background-color: aqua;}
-  main{background-color: blueviolet;}
-  section{background-color: chartreuse;}
-  footer{background-color: black;}
+/* CABEÇALHO --------------------------------------------------------------*/
+
+header {
+  border: var(--borda);
+  background-color: #ff6b81;
+}
+
+figure {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 13px;
+  margin: 0;
+  align-items: center;
+}
+
+.supe {
+  position: sticky;
+  display: flex;
+  grid-area: cabecalho;
+  /* border: var(--borda); */
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 9%;
+
+}
+
+.logo {
+  /* border: 1px solid black; */
+  height: 40px;
+}
+
+figure h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.btn1 {
+  width: 180px;
+  height: 40px;
+  background: none;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  border: ;
+}
+
+
+
+/* PRINCIPAL------------------------------------------------------------- */
+
+main {
+  background-color: blueviolet;
+}
+
+
+
+
+/* RODAPÉ----------------------------------------------------------------- */
+
+footer {
+  background-color: black;
+}

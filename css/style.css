@@ -68,8 +68,17 @@ figure h3 {
   color: #fff;
   border-radius: 4px;
   font-size: 12px;
-  border: ;
+
 }
+
+.esq {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
 
 
 

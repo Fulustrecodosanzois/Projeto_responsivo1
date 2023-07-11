@@ -52,9 +52,6 @@ figure {
   align-items: center;
   /* border: 2px solid blue; */
   justify-content: space-between;
-  
-
-
 }
 
 .logo {
@@ -198,7 +195,6 @@ article {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
- 
   
 }
 
@@ -232,7 +228,6 @@ article small {
   font-size: 26px;
   margin-top: 10px;
   font-weight: 800;
-  
 }
 
 
@@ -267,8 +262,8 @@ article small {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  
 }
-
 
 .bloco {
   display: flex;
@@ -286,12 +281,9 @@ article small {
 
 .scopo_mural, h5{ 
   width: 85%;
-  
   text-align: left;
   font-family: tahoma;
   margin: 0;
-  
-  
 }
 
 .scopo_mural { 
@@ -299,17 +291,53 @@ article small {
   font-family: Helvetica, sans-serif;
   font-size: 11px;
   font-weight: lighter;
-
 }
-
 
 /* RODAPÉ----------------------------------------------------------------- */
 
 
-
 footer {
+  /* border: 2px solid red; */
   background-color: #ff6b81;
   grid-area: rodape;
+  height: 285px;  
+  display: flex;
+  justify-content: center;
+}
+
+.rodape {
+  /* border: 2px solid rgb(42, 31, 192); */
   height: 280px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.info {
+  /* border: 2px solid rgb(19, 204, 90); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  text-align: center;
+}
+
+.titulo_rodape {
+  /* border: 2px solid rgb(197, 194, 28); */
+  color: white;
+  width: 80%;
+  text-align: center;
+  
+}
+
+.rodape2 {
+  display: flex;
+  /* border: 2px solid rgb(128, 204, 240); */
+  width: 60%;
+  justify-content: space-between;
 }
 

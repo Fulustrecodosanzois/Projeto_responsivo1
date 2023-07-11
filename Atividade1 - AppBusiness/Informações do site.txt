@@ -36,4 +36,4 @@ Título:  Backups de Banco de Dados
 Conteúdo: Proteja seus dados com confiança: nossos backups oferecem uma solução robusta e eficiente para garantir a segurança das informações essenciais para o seu negócio.
 
 **** FOOTER****
-Garantido por desenvolvedores de mais de 80 países
+Garantido por desenvolvedores de mais de 80 países.

@@ -31,7 +31,7 @@ header {
   grid-area: cabecalho;
   /* border: 2px solid yellowgreen; */
   background-color: #ff6b81;
-  height: 607px;
+  height: 654px;
   flex-direction: column;
   align-items: center;
   
@@ -76,6 +76,7 @@ figure h3 {
   color: #fff;
   border-radius: 4px;
   font-size: 12px;
+  text-transform: capitalize;
   
 
 }
@@ -85,45 +86,11 @@ figure h3 {
   display: flex;
   flex-direction: column;
   /* border: 2px solid brown; */
-  justify-content: center;
+  align-content: space-around;
   height: 400px;
   
 
 }
-
-.texto > h1 {
-  display: flex;
-  font-size: 29px;
-  font-family: helvetica, serif;
-  font-weight: bolder;
-  color: #fff;
-  /* border: 2px solid crimson; */
-
-}
-
-.texto > h5 {
-  color: #fff;
-  font-size: 12px;
-  /* border: 2px solid darkgreen; */
-  justify-items: space-evenly;
-  
-}
-
-.infer {
-  display: flex;
-  /* border: 2px solid goldenrod; */
-  width: 85%;
-  padding: 6% 0;
-  align-items: center;
-  
-}
-
-.dir > img{
-  width: 90%;
-  /* border: var(--borda); */
-  display: flex;
-}
-
 
 .texto {
   display: flex;
@@ -138,11 +105,49 @@ figure h3 {
 
 }
 
-.texto > h5 {
+
+.texto > h1 {
+  
+  font-size: 29px;
+  font-family: helvetica, serif;
+  font-weight: bolder;
+  color: #fff;
+  /* border: 2px solid crimson; */
+  margin: 70px 0 0;
+
+}
+
+.texto > p {
+  color: #fff;
+  font-size: 30px;
+  /* border: 2px solid darkgreen; */
+  
+
+}
+
+.texto > p, h1 {
+  width: 70%;
+}
+
+.texto > p {
   color: #fff;
   font-size: 12px;
 }
 
+.infer {
+  display: flex;
+  /* border: 2px solid goldenrod; */
+  width: 85%;
+  padding: 6% 0;
+  align-items: center;
+  
+}
+
+.dir > img{
+  width: 642px;
+  /* border: var(--borda); */
+  display: flex;
+}
 
 .btn2 {
   /* border: 2px solid chartreuse; */
@@ -155,7 +160,7 @@ figure h3 {
   border: none;
   padding: 11px 22px;
   border-radius: 5px;
-  font-weight: 750;
+  font-weight: 300;
   margin-right: 13px;
 
 }
@@ -178,7 +183,7 @@ figure h3 {
 main {
   background-color: white;
   grid-area: main;
-  height: 565px;
+  height: 615px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,6 +198,7 @@ article {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+ 
   
 }
 
@@ -244,6 +250,12 @@ article small {
   color: rgb(66, 66, 66);
 }
 
+.mural p{ 
+  color: white;
+  /* border: 2px solid white; */
+  margin: 0;
+
+}
 
 .blocoo {
   display: flex;
@@ -257,14 +269,10 @@ article small {
   gap: 15px;
 }
 
-/* 
-.blocoo,.bloco >h5 {
-  margin: ;
-} */
 
 .bloco {
   display: flex;
-  width: 30%;
+  width: 270px;
   height: 130px;
   background-color: #ff6b81;
   flex-direction: column;
@@ -288,16 +296,9 @@ article small {
 
 .scopo_mural { 
   width: 85%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 11px;
   font-weight: lighter;
-
-}
-
-.mural h6{ 
-  color: white;
-  /* border: 2px solid white; */
-  margin: 0;
 
 }
 
@@ -306,9 +307,9 @@ article small {
 
 
 
-
 footer {
   background-color: #ff6b81;
   grid-area: rodape;
   height: 280px;
 }
+

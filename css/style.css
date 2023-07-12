@@ -1002,32 +1002,34 @@ footer {
     /* border: 2px solid red; */
     background-color: #ff6b81;
     grid-area: rodape;
-    height: 250px;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .rodape {
-    /* border: 2px solid rgb(42, 31, 192); */
-    height: 250px;
+    border: 2px solid rgb(42, 31, 192);
+    height: 700px;
     width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 90%;
   }
 
 
   .info {
-    /* border: 2px solid rgb(19, 204, 90); */
+    border: 2px solid rgb(19, 204, 90);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 110px;
-    height: 50px;
+    width: auto;
+    height: auto;
     justify-content: space-between;
+    font-size: 25px;
   }
 
   .info h1 {
@@ -1042,18 +1044,21 @@ footer {
   }
 
   .titulo_rodape {
-    /* border: 2px solid rgb(197, 194, 28); */
+    border: 2px solid rgb(197, 194, 28);
     color: white;
-    width: 80%;
+    width: 95%;
     text-align: center;
+    font-size: 40px;
 
   }
 
   .rodape2 {
     display: flex;
-    /* border: 2px solid rgb(128, 204, 240); */
-    width: 75%;
-    justify-content: space-between;
+    border: 2px solid rgb(128, 204, 240);
+    width: 40%;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
   }
 
 

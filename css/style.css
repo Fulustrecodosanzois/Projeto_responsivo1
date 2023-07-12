@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 /*----------------------------------------------- Variáveis*/
 
 :root {
@@ -13,7 +12,6 @@
 
 body {
   font-family: arial;
-  color: #000;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
@@ -31,38 +29,38 @@ header {
   grid-area: cabecalho;
   /* border: 2px solid yellowgreen; */
   background-color: #ff6b81;
-  height: 654px;
+  height: 97.5%;
   flex-direction: column;
   align-items: center;
-  
 }
 
 figure {
   /* border: 2px solid black; */
   display: flex;
-  gap: 13px;
+  height: 100%;
   margin: 0;
   align-items: center;
-  
+  gap: 15px;
 }
 
 .supe {
   display: flex;
-  width: 85%;
+  width: 80%;
   align-items: center;
   /* border: 2px solid blue; */
   justify-content: space-between;
+  
 }
 
 .logo {
   /* border: 1px solid black; */
-  height: 40px;
-
+  height: 60px;
 }
 
 figure h3 {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
+  
 }
 
 .btn1 {
@@ -74,19 +72,14 @@ figure h3 {
   border-radius: 4px;
   font-size: 12px;
   text-transform: capitalize;
-  
-
 }
 
 .esq {
-  
   display: flex;
   flex-direction: column;
   /* border: 2px solid brown; */
   align-content: space-around;
   height: 400px;
-  
-
 }
 
 .texto {
@@ -96,54 +89,41 @@ figure h3 {
   font-weight: bolder;
   color: #fff;
   /* border: 2px solid cyan; */
-  height: 220px;
+  height: auto ;
   gap: 25px;
   flex-direction: column;
-
 }
 
-
 .texto > h1 {
-  
   font-size: 29px;
   font-family: helvetica, serif;
   font-weight: bolder;
   color: #fff;
   /* border: 2px solid crimson; */
   margin: 70px 0 0;
-
+  width: 80%;
 }
 
 .texto > p {
   color: #fff;
-  font-size: 30px;
+  font-size: 15px;
   /* border: 2px solid darkgreen; */
-  
-
-}
-
-.texto > p, h1 {
-  width: 70%;
-}
-
-.texto > p {
-  color: #fff;
-  font-size: 12px;
+  width: 80%;
 }
 
 .infer {
   display: flex;
   /* border: 2px solid goldenrod; */
-  width: 85%;
-  padding: 6% 0;
+  width: 80%;
   align-items: center;
-  
+  height: 600px;
 }
 
-.dir > img{
-  width: 642px;
+.img {
+  margin-top: 110px;
+  width: 100%;
+
   /* border: var(--borda); */
-  display: flex;
 }
 
 .btn2 {
@@ -159,10 +139,11 @@ figure h3 {
   border-radius: 5px;
   font-weight: 300;
   margin-right: 13px;
-
+  width: 150px;
+  height: 50px;
 }
 
-.btn_google{
+.btn_google {
   color: #fff;
   background-color: #ff6b81;
   border: none;
@@ -171,53 +152,374 @@ figure h3 {
   font-weight: 750;
   outline: 2px solid #fff;
   outline-offset: -2px;
+  width: 150px;
+  height: 50px;
 }
 
-/* -----------------------------------------PRINCIPAL */
-
-
+/* ---------------------------------------------------------- MAIN */
 
 main {
   background-color: white;
   grid-area: main;
-  height: 615px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid rgb(224, 95, 35); */
-
+  border: 2px solid rgb(224, 95, 35);
+  
 }
 
-article { 
-  /* border: 2px solid rgb(198, 224, 48); */
+article {
+  border: 2px solid rgb(198, 224, 48);
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  
 }
 
 article small {
   width: 75%;
   text-align: center;
   color: grey;
-  
 }
 
 .artigo {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+}
+
+.artigo > h6 {
+  color: #ff6b81;
+  border: 2px solid rgb(76, 0, 255);
+  margin: 0;
+}
+
+.artigo > h1 {
+  width: 80%;
+  text-transform: capitalize;
+  border: 2px solid rgb(76, 0, 255);
+  text-align: center;
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.mural {
+  display: flex;
+  width: 70%;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 2px solid rgb(20, 199, 131);
+  justify-content: center;
+  height: 500px;
+  padding: 5%;
+}
+
+.mural h5 {
+  color: rgb(66, 66, 66);
+}
+
+.mural p {
+  color: white;
+  border: 2px solid white;
+  margin: 0;
+}
+
+.blocoo {
+  display: flex;
+  background-color: #ff6b81;
+  width: 300px;
+  height: 130px;
+  flex-direction: column;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.bloco {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  background-color: #ff6b81;
+  flex-direction: column;
+  border-radius: 4px;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin: 0;
+}
+
+.scopo_mural,
+h5 {
+  width: 85%;
+  text-align: left;
+  font-family: tahoma;
+  margin: 0;
+}
+
+.scopo_mural {
+  width: 85%;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
   
 }
 
-.artigo > h6{
+/* --------------------------------------------------------- RODAPÉ */
+
+footer {
+  /* border: 2px solid red; */
+  background-color: #ff6b81;
+  grid-area: rodape;
+  height: 285px;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape {
+  /* border: 2px solid rgb(42, 31, 192); */
+  height: 280px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info {
+  /* border: 2px solid rgb(19, 204, 90); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info > h1 {
+  margin: 10px;
+}
+
+#user {
+  width: 200px;
+}
+
+
+.titulo_rodape {
+  /* border: 2px solid rgb(197, 194, 28); */
+  color: white;
+  width: 80%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape2 {
+  display: flex;
+  /* border: 2px solid rgb(128, 204, 240); */
+  width: 60%;
+  justify-content: space-between;
+}
+
+
+
+/*-------------------------------------------------- RESPONSIVIDADE */
+
+
+
+/* -------------------------------------------------- TABLET */
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-family: arial;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "cabecalho"
+      "main"
+      "rodape";
+    height: 100vh;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    grid-area: cabecalho;
+    /* border: 2px solid yellowgreen; */
+    background-color: #32c75f;
+    height: 770px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    /* border: 2px solid rgb(23, 216, 33); */
+    display: flex;
+
+    width: 70%;
+    height: auto;
+  }
+
+  .supe {
+    display: flex;
+    width: 80%;
+    justify-items: center;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .logo {
+    /* border: 1px solid rgb(133, 131, 131); */
+    height: 40px;
+  }
+
+  figure h3 {
+    font-size: 20px;
+    color: white;
+    /* border: 1px solid black; */
+  }
+
+  .btn1 {
+    width: 186px;
+    height: 40px;
+    background: none;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  .esq {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(195, 84, 240); */
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .texto {
+    display: flex;
+    font-size: 29px;
+    font-family: helvetica, serif;
+    font-weight: bolder;
+    color: #fff;
+    /* border: 2px solid cyan; */
+    height: 130px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto > h1 {
+    font-size: 29px;
+    font-family: helvetica, serif;
+    font-weight: bolder;
+    color: #fff;
+    /* border: 2px solid rgb(241, 236, 237); */
+    margin: 0;
+  }
+
+  .texto > p {
+    color: #fff;
+    font-size: 30px;
+    /* border: 2px solid darkgreen; */
+  }
+
+  .texto > p,
+  h1 {
+    width: 85%;
+    text-align: center;
+  }
+
+  .texto > p {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .infer {
+    display: flex;
+    /* border: 2px solid rgb(243, 206, 114); */
+    width: 80%;
+    height: 727px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dir > img {
+    width: 100%;
+    /* border: var(--borda); */
+    display: flex;
+  }
+
+  .btn2 {
+    /* border: 2px solid chartreuse; */
+    display: flex;
+  }
+
+  .btn_app {
+    color: #ff6b81;
+    background-color: #fff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    font-weight: 300;
+    margin-right: 13px;
+  }
+
+  .btn_google {
+    color: #fff;
+    background-color: #ff6b81;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    font-weight: 750;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+  }
+
+
+/* ----------------------------------------------------- MAIN */
+
+main {
+  background-color: white;
+  grid-area: main;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid rgb(224, 95, 35); */
+}
+
+article {
+  /* border: 2px solid rgb(198, 224, 48); */
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+article small {
+  width: 75%;
+  text-align: center;
+  color: grey;
+}
+
+.artigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigo > h6 {
   color: #ff6b81;
   /* border: 2px solid rgb(76, 0, 255); */
   margin: 0;
-
 }
 
 .artigo > h1 {
@@ -230,91 +532,91 @@ article small {
   font-weight: 800;
 }
 
-
 .mural {
   display: flex;
-  width: 67%;
+  width: 80%;
   gap: 20px;
   flex-wrap: wrap;
   /* border: 2px solid rgb(20, 199, 131); */
   justify-content: center;
-  
 }
 
-.mural h5{
+.mural h5 {
   color: rgb(66, 66, 66);
+  font-size: 16px;
 }
 
-.mural p{ 
+.mural p {
   color: white;
   /* border: 2px solid white; */
   margin: 0;
-
 }
 
 .blocoo {
   display: flex;
   background-color: #ff6b81;
-  width:270px;
-  height: 115px;
+  width: 350px;
+  height: 200px;
   flex-direction: column;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-
 }
 
 .bloco {
   display: flex;
-  width: 270px;
-  height: 130px;
+  width: 350px;
+  height: 200px;
   background-color: #ff6b81;
   flex-direction: column;
   border-radius: 4px;
   align-items: center;
-  gap: 15px;
   justify-content: center;
   margin: 0;
-  
 }
 
-.scopo_mural, h5{ 
+#bloco_dif {
+  height: 230px;
+}
+
+.scopo_mural,
+h5 {
   width: 85%;
   text-align: left;
-  font-family: tahoma;
+  font-family: helvetica;
   margin: 0;
+  font-weight: 540;
 }
 
-.scopo_mural { 
+.scopo_mural {
   width: 85%;
   font-family: Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: lighter;
+  font-size: 16px;
+  line-height: 0.6cm;
+  word-spacing: 3px;
 }
 
-/* --------------------------------------------RODAPÉ */
-
+/* ------------------------------------------------  RODAPÉ */
 
 footer {
   /* border: 2px solid red; */
   background-color: #ff6b81;
   grid-area: rodape;
-  height: 285px;  
+  height: 250px;
   display: flex;
   justify-content: center;
 }
 
 .rodape {
   /* border: 2px solid rgb(42, 31, 192); */
-  height: 280px;
-  width: 50%;
+  height: 250px;
+  width: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-
 
 .info {
   /* border: 2px solid rgb(19, 204, 90); */
@@ -323,7 +625,17 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 110px;
-  text-align: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.info h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+.info small {
+  font-weight: 700;
 }
 
 .titulo_rodape {
@@ -331,35 +643,345 @@ footer {
   color: white;
   width: 80%;
   text-align: center;
-  
 }
 
 .rodape2 {
   display: flex;
   /* border: 2px solid rgb(128, 204, 240); */
-  width: 60%;
+  width: 75%;
   justify-content: space-between;
 }
+}
+/* ------------------------------------------------  MARTPHONE */
 
-/*  -------------------------------------------RESPONSIVIDADE */
-
-/*  -------------------------------------------TABLET */
-
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 767px) {
   body {
     font-family: arial;
-  color: #000;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    "cabecalho"
-    "main"
-    "rodape";
-  margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "cabecalho"
+      "main"
+      "rodape";
+    height: 100vh;
+    margin: 0;
   }
 
+  header {
+    display: flex;
+    grid-area: cabecalho;
+    /* border: 2px solid yellowgreen; */
+    background-color: #f00a2d;
+    height: 1250px;
+    flex-direction: column;
+  }
 
+  figure {
+    border: 2px solid rgb(232, 236, 232);
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+  }
 
+  .supe {
+    display: flex;
+    width: 90%;
+    justify-items: center;
+    border: 2px solid blue;
+    justify-content: space-between;
+    margin: 0;
+    height: auto;
+  }
 
+  .logo {
+    /* border: 1px solid rgb(24, 216, 81); */
+    height: 80px;
+  }
+
+  .dir > img {
+    width: 100%;
+    border: 2px solid rgb(191, 241, 72);
+  }
+
+  figure h3 {
+    font-size: 40px;
+    color: white;
+    /* border: 1px solid black; */
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .esq {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(195, 84, 240);
+    height: auto;
+    align-items: center;
+  }
+
+  .texto {
+    display: flex;
+    font-family: helvetica, serif;
+    color: #fff;
+    border: 2px solid cyan;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .texto > h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: 2px solid rgb(241, 236, 237);
+    margin: 0;
+    font-weight: bolder;
+    line-height: 60px;
+  }
+
+  .texto > p {
+    width: 100%;
+    border: 2px solid darkgreen;
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: Helvetica;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .texto h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infer {
+    display: flex;
+    border: 2px solid rgb(243, 206, 114);
+    width: 90%;
+    height: 800px;
+  }
+
+  .btn2 {
+    width: 50%;
+    height: 135px;
+    border: 2px solid rgb(62, 176, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn_app {
+    width: auto;
+    color: #ff6b81;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+    margin: 0;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn_google {
+    color: #fff;
+    background-color: #ff6b81;
+    border: none;
+    border-radius: 5px;
+    font-weight: 750;
+    outline: 4px solid #fff;
+    outline-offset: -4px;
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  /* ----------------------------------------------------- MAIN */
+
+  main {
+    background-color: white;
+    grid-area: main;
+    height: 2800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(224, 95, 35);
+  }
+
+  article {
+    border: 2px solid rgb(198, 224, 48);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article small {
+    width: 70%;
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .artigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artigo > h6 {
+    color: #ff6b81;
+    border: 2px solid rgb(76, 0, 255);
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .artigo > h1 {
+    width: 80%;
+    text-transform: capitalize;
+    border: 2px solid rgb(76, 0, 255);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 800;
+  }
+
+  .mural {
+    display: flex;
+    width: 90%;
+    gap: 60px;
+    flex-direction: column;
+    border: 2px solid rgb(20, 199, 131);
+
+    height: auto;
+  }
+
+  .mural h5 {
+    color: rgb(66, 66, 66);
+    font-size: 30px;
+  }
+
+  .mural p {
+    color: white;
+    border: 2px solid rgb(226, 66, 66);
+    margin: 0;
+    width: 95%;
+  }
+
+  .blocoo {
+    display: flex;
+    background-color: #ff6b81;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 60px 40px;
+  }
+
+  .bloco {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #ff6b81;
+    flex-direction: column;
+    border-radius: 6px;
+
+    padding: 60px 40px;
+  }
+
+  #bloco_dif {
+    display: flex;
+    background-color: #ff6b81;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 60px 40px;
+  }
+
+  .scopo_mural {
+    width: 85%;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    word-spacing: 3px;
+    text-align: left;
+  }
+
+  .scopo_mural,
+  h5 {
+    text-align: left;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: 540;
+    border: 2px solid black;
+    width: 95%;
+  }
+
+  /* ------------------------------------------------  RODAPÉ */
+
+  footer {
+    /* border: 2px solid red; */
+    background-color: #ff6b81;
+    grid-area: rodape;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape {
+    border: 2px solid rgb(42, 31, 192);
+    height: 700px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .info {
+    border: 2px solid rgb(19, 204, 90);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    font-size: 25px;
+  }
+
+  .info h1 {
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .info small {
+    font-weight: 700;
+  }
+
+  .titulo_rodape {
+    border: 2px solid rgb(197, 194, 28);
+    color: white;
+    width: 95%;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .rodape2 {
+    display: flex;
+    border: 2px solid rgb(128, 204, 240);
+    width: 40%;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+  }
 }

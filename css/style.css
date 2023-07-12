@@ -3,13 +3,13 @@
 }
 
 
-/*Variáveis-----------------------------------------------------------------*/
+/*----------------------------------------------- Variáveis*/
 
 :root {
   --borda: 2px solid #000;
 }
 
-/* GRID -------------------------------------------------------------------*/
+/*  ---------------------------------------------- GRID*/
 
 body {
   font-family: arial;
@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-/* CABEÇALHO --------------------------------------------------------------*/
+/*  ---------------------------------------------- CABEÇALHO*/
 
 header {
   display: flex;
@@ -173,7 +173,7 @@ figure h3 {
   outline-offset: -2px;
 }
 
-/* PRINCIPAL------------------------------------------------------------- */
+/* -----------------------------------------PRINCIPAL */
 
 
 
@@ -262,7 +262,7 @@ article small {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  
+
 }
 
 .bloco {
@@ -293,7 +293,7 @@ article small {
   font-weight: lighter;
 }
 
-/* RODAPÉ----------------------------------------------------------------- */
+/* --------------------------------------------RODAPÉ */
 
 
 footer {
@@ -341,3 +341,25 @@ footer {
   justify-content: space-between;
 }
 
+/*  -------------------------------------------RESPONSIVIDADE */
+
+/*  -------------------------------------------TABLET */
+
+@media screen and (max-width: 1200px) {
+
+  body {
+    font-family: arial;
+  color: #000;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "cabecalho"
+    "main"
+    "rodape";
+  margin: 0;
+  }
+
+
+
+
+}

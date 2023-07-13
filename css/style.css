@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-/*----------------------------------------------- Variáveis*/
-
-:root {
-  --borda: 2px solid #000;
-}
-
 /*  ---------------------------------------------- GRID*/
 
 body {
@@ -29,7 +23,7 @@ header {
   grid-area: cabecalho;
   /* border: 2px solid yellowgreen; */
   background-color: #ff6b81;
-  height: 605px;
+  height: 97%;
   flex-direction: column;
   align-items: center;
 }
@@ -120,7 +114,6 @@ figure h3 {
 .img {
   margin-top: 110px;
   width: 100%;
-
   /* border: var(--borda); */
 }
 
@@ -203,9 +196,9 @@ article small {
   font-weight: 800;
 }
 
-main .mural {
+.mural {
   display: flex;
-  width: 90%;
+  width: 80%;
   gap: 20px;
   flex-wrap: wrap;
   /* border: 2px solid rgb(20, 199, 131); */
@@ -320,28 +313,24 @@ footer {
   justify-content: space-between;
 }
 
+/* -----------------------------  ANIMAÇÕES DESKTOP  */
+
+.btn1:hover, .btn1:focus {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 6px 5px white ;
+  transition: transform 0.6s ease-in-out;
+}
+
+.btn1:active{
+  background-color: white;
+}
+
+
+
+
+
+
 /*-------------------------------------------------- RESPONSIVIDADE */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* -------------------------------------------------- TABLET */
@@ -429,6 +418,7 @@ footer {
   }
 
   .texto>h1 {
+    width: 100%;
     font-size: 29px;
     font-family: helvetica, serif;
     font-weight: bolder;
@@ -666,29 +656,6 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------  MARTPHONE */
 
 @media screen and (max-width: 767px) {
@@ -737,7 +704,7 @@ footer {
 
   #imgg {
     width: 100%;
-    border: 2px solid rgb(191, 241, 72);
+    /* border: 2px solid rgb(191, 241, 72); */
     margin-top: 10%;
   }
 
@@ -754,7 +721,7 @@ footer {
   #esqq {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(195, 84, 240);
+    /* border: 2px solid rgb(195, 84, 240); */
     height: auto;
     align-items: center;
     margin: 0;
@@ -839,8 +806,6 @@ footer {
     font-size: 20px;
   }
 
-
-
   /* ----------------------------------------------------- MAIN */
 
   #meioo {
@@ -855,25 +820,23 @@ footer {
 
   #meioo > .artigoo >.artigo > .titulo_artigo {
     width: auto;
-    border: 2px solid rgb(212, 19, 5);
+    /* border: 2px solid rgb(212, 19, 5); */
     display: flex;
     font-size: 25px;
   }
 
   #meioo .artigoo {
     width: 100%;
-    border: 2px solid rgb(114, 10, 3);
+    /* border: 2px solid rgb(114, 10, 3); */
     height: 11%;
 
   }
-
 
   #meioo > .artigoo > .artigo {
     display: flex;
     flex-direction: column;
     
   }
-
 
   #meioo > .artigoo > .artigo > .artigo_h1 {
     width: 80%;
@@ -889,7 +852,6 @@ footer {
     width: 60%;
     line-height: 0.8cm;
   }
-
 
 /* --------------------------- MURAL */
 
@@ -926,7 +888,6 @@ footer {
     
   }
 
-
   .mural > .blocoo , #bloco_dif {
     display: flex;
     background-color: #ff6b81;
@@ -960,7 +921,7 @@ footer {
   }
 
   .rodape {
-    border: 2px solid rgb(42, 31, 192);
+    /* border: 2px solid rgb(42, 31, 192); */
     height: 700px;
     width: 80%;
     display: flex;
@@ -992,7 +953,7 @@ footer {
   }
 
   .titulo_rodape {
-    border: 2px solid rgb(197, 194, 28);
+    /* border: 2px solid rgb(197, 194, 28); */
     color: white;
     width: 95%;
     text-align: center;
@@ -1001,7 +962,7 @@ footer {
 
   .rodape2 {
     display: flex;
-    border: 2px solid rgb(128, 204, 240);
+    /* border: 2px solid rgb(128, 204, 240); */
     width: 40%;
     flex-direction: column;
     height: 300px;

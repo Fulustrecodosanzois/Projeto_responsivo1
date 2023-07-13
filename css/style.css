@@ -49,7 +49,6 @@ figure {
   align-items: center;
   /* border: 2px solid blue; */
   justify-content: space-between;
-  
 }
 
 .logo {
@@ -60,7 +59,6 @@ figure {
 figure h3 {
   font-size: 30px;
   color: white;
-  
 }
 
 .btn1 {
@@ -89,7 +87,7 @@ figure h3 {
   font-weight: bolder;
   color: #fff;
   /* border: 2px solid cyan; */
-  height: auto ;
+  height: auto;
   gap: 25px;
   flex-direction: column;
 }
@@ -166,11 +164,10 @@ main {
   flex-direction: column;
   align-items: center;
   border: 2px solid rgb(224, 95, 35);
-  
 }
 
 article {
-  border: 2px solid rgb(198, 224, 48);
+  /* border: 2px solid rgb(198, 224, 48); */
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -208,7 +205,7 @@ article small {
 
 .mural {
   display: flex;
-  width: 70%;
+  width: 90%;
   gap: 20px;
   flex-wrap: wrap;
   border: 2px solid rgb(20, 199, 131);
@@ -265,7 +262,6 @@ h5 {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: lighter;
-  
 }
 
 /* --------------------------------------------------------- RODAPÉ */
@@ -309,7 +305,6 @@ footer {
   width: 200px;
 }
 
-
 .titulo_rodape {
   /* border: 2px solid rgb(197, 194, 28); */
   color: white;
@@ -325,11 +320,7 @@ footer {
   justify-content: space-between;
 }
 
-
-
 /*-------------------------------------------------- RESPONSIVIDADE */
-
-
 
 /* -------------------------------------------------- TABLET */
 
@@ -350,7 +341,7 @@ footer {
     display: flex;
     grid-area: cabecalho;
     /* border: 2px solid yellowgreen; */
-    background-color: #32c75f;
+    background-color: #f1705f;
     height: 770px;
     flex-direction: column;
     align-items: center;
@@ -367,8 +358,9 @@ footer {
   .supe {
     display: flex;
     width: 80%;
+    margin-top: 10px;
     justify-items: center;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     justify-content: space-between;
     margin: 0;
   }
@@ -482,175 +474,175 @@ footer {
     outline-offset: -2px;
   }
 
+  /* ----------------------------------------------------- MAIN */
 
-/* ----------------------------------------------------- MAIN */
+  main {
+    background-color: white;
+    grid-area: main;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(224, 95, 35);
+  }
 
-main {
-  background-color: white;
-  grid-area: main;
-  height: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* border: 2px solid rgb(224, 95, 35); */
-}
+  article {
+    /* border: 2px solid rgb(198, 224, 48); */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
 
-article {
-  /* border: 2px solid rgb(198, 224, 48); */
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-}
+  article small {
+    width: 75%;
+    text-align: center;
+    color: grey;
+  }
 
-article small {
-  width: 75%;
-  text-align: center;
-  color: grey;
-}
+  .artigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.artigo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .artigo > h6 {
+    color: #ff6b81;
+    border: 2px solid rgb(76, 0, 255);
+    margin: 0;
+  }
 
-.artigo > h6 {
-  color: #ff6b81;
-  /* border: 2px solid rgb(76, 0, 255); */
-  margin: 0;
-}
+  .artigo > h1 {
+    width: 80%;
+    text-transform: capitalize;
+    border: 2px solid rgb(76, 0, 255);
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: 800;
+  }
 
-.artigo > h1 {
-  width: 80%;
-  text-transform: capitalize;
-  /* border: 2px solid rgb(76, 0, 255); */
-  text-align: center;
-  font-size: 26px;
-  margin-top: 10px;
-  font-weight: 800;
-}
+  main .mural {
+    
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.mural {
-  display: flex;
-  width: 80%;
-  gap: 20px;
-  flex-wrap: wrap;
-  /* border: 2px solid rgb(20, 199, 131); */
-  justify-content: center;
-}
+  }
 
-.mural h5 {
-  color: rgb(66, 66, 66);
-  font-size: 16px;
-}
+  .mural h5 {
+    color: rgb(66, 66, 66);
+    font-size: 16px;
+  }
 
-.mural p {
-  color: white;
-  /* border: 2px solid white; */
-  margin: 0;
-}
+  .mural p {
+    color: white;
+    /* border: 2px solid white; */
+    margin: 0;
+  }
 
-.blocoo {
-  display: flex;
-  background-color: #ff6b81;
-  width: 350px;
-  height: 200px;
-  flex-direction: column;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
+  .blocoo {
+    display: flex;
+    background-color: #ff6b81;
+    width: 350px;
+    height: 200px;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 
-.bloco {
-  display: flex;
-  width: 350px;
-  height: 200px;
-  background-color: #ff6b81;
-  flex-direction: column;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
+  .bloco {
+    display: flex;
+    width: 350px;
+    height: 200px;
+    background-color: #ff6b81;
+    flex-direction: column;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 
-#bloco_dif {
-  height: 230px;
-}
+  #bloco_dif {
+    height: 230px;
+  }
 
-.scopo_mural,
-h5 {
-  width: 85%;
-  text-align: left;
-  font-family: helvetica;
-  margin: 0;
-  font-weight: 540;
-}
+  .scopo_mural,
+  h5 {
+    width: 85%;
+    text-align: left;
+    font-family: helvetica;
+    margin: 0;
+    font-weight: 540;
+  }
 
-.scopo_mural {
-  width: 85%;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 0.6cm;
-  word-spacing: 3px;
-}
+  .scopo_mural {
+    width: 85%;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 0.6cm;
+    word-spacing: 3px;
+  }
 
-/* ------------------------------------------------  RODAPÉ */
+  /* ------------------------------------------------  RODAPÉ */
 
-footer {
-  /* border: 2px solid red; */
-  background-color: #ff6b81;
-  grid-area: rodape;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-}
+  footer {
+    /* border: 2px solid red; */
+    background-color: #ff6b81;
+    grid-area: rodape;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+  }
 
-.rodape {
-  /* border: 2px solid rgb(42, 31, 192); */
-  height: 250px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+  .rodape {
+    /* border: 2px solid rgb(42, 31, 192); */
+    height: 250px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.info {
-  /* border: 2px solid rgb(19, 204, 90); */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 110px;
-  height: 50px;
-  justify-content: space-between;
-}
+  .info {
+    /* border: 2px solid rgb(19, 204, 90); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    justify-content: space-between;
+  }
 
-.info h1 {
-  font-weight: 900;
-  margin: 0;
-}
+  .info h1 {
+    font-weight: 900;
+    margin: 0;
+  }
 
-.info small {
-  font-weight: 700;
-}
+  .info small {
+    font-weight: 700;
+  }
 
-.titulo_rodape {
-  /* border: 2px solid rgb(197, 194, 28); */
-  color: white;
-  width: 80%;
-  text-align: center;
-}
+  .titulo_rodape {
+    /* border: 2px solid rgb(197, 194, 28); */
+    color: white;
+    width: 80%;
+    text-align: center;
+  }
 
-.rodape2 {
-  display: flex;
-  /* border: 2px solid rgb(128, 204, 240); */
-  width: 75%;
-  justify-content: space-between;
-}
+  .rodape2 {
+    display: flex;
+    /* border: 2px solid rgb(128, 204, 240); */
+    width: 75%;
+    justify-content: space-between;
+  }
 }
 /* ------------------------------------------------  MARTPHONE */
 
@@ -857,7 +849,7 @@ footer {
     width: 90%;
     gap: 60px;
     flex-direction: column;
-    border: 2px solid rgb(20, 199, 131);
+    /* border: 2px solid rgb(20, 199, 131); */
 
     height: auto;
   }

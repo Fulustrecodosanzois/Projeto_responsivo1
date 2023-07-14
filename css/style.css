@@ -690,8 +690,6 @@ footer {
   }
 }
 
-
-
 /* ------------------------------------------------  MARTPHONE */
 
 @media screen and (max-width: 767px) {
@@ -889,7 +887,6 @@ footer {
   }
 
 /* --------------------------- MURAL */
-
 
   #meioo > .mural {
     display: flex;

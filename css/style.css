@@ -703,15 +703,14 @@ footer {
       "cabecalho"
       "main"
       "rodape";
-    height: 100vh;
     margin: 0;
   }
 
-  #cabeca2 {
+  header {
     display: flex;
     grid-area: cabecalho;
     /* border: 2px solid yellowgreen; */
-    height: 1250px;
+    height: 100%;
     flex-direction: column;
   }
 
@@ -725,9 +724,9 @@ footer {
 
   #supee {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-items: center;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     justify-content: space-between;
     margin: 0;
     height: 150px;
@@ -758,7 +757,7 @@ footer {
     display: flex;
     flex-direction: column;
     /* border: 2px solid rgb(195, 84, 240); */
-    height: auto;
+    height: 100%;
     align-items: center;
     margin: 0;
   }
@@ -804,7 +803,7 @@ footer {
     display: flex;
     /* border: 2px solid rgb(233, 14, 14); */
     width: 90%;
-    height: 800px;
+    height: 100%;
   }
 
   .btn2 {
@@ -911,14 +910,14 @@ footer {
   }
 
   .mural >  .bloco > #scopo {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1cm;
     width: 90%;
     
   }
 
   .mural >  .blocoo > #scopo {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1cm;
     width: 90%;
     
